@@ -1,0 +1,27 @@
+#%RAML 1.0
+#this will be called whenever userselects a slot, it will check with server if it is currently working
+title: BookingsSelection API
+
+/slotcheck:
+  post:
+    body:
+      application/json:
+
+        example: {
+          "studio_id":9,
+          "user_id":2,
+          "booking_id":11,
+          "booking_time":"8pm"
+          }
+    responses:
+      201:
+        body:
+          application/json:
+            example: {
+
+          "data":{
+            "status":"error", #(or success)
+            "msg":"Sorry this slot has already been booked"
+            }
+
+              }
