@@ -1,26 +1,21 @@
 #%RAML 1.0
-#this api is for generating cart whenever user checks out or whenver client sends this data(for now every 3 mins)
+#this api is for submitting services
 
-title: BookingsSelection API
+title: submitServices API
 
-/cart:
+/submitServices:
   post:
     body:
       application/json:
         example: {
           "studio_id":9,
           "user_id":2,
-          "bookings":[#if no bookings are selected then it will be blank
-            {"booking_id":11},
-            {"booking_id":12}
-          ],
+
           "services":[{#if no services are selected then it will be blank
             "service_id":1,
-            "service_count":2,
           },
           {
             "service_id":2,
-            "service_count":0,
           }],
 
           }
@@ -32,8 +27,8 @@ title: BookingsSelection API
 
           "data":{#need to check here that if services are submitted which require slots then that many slots are selected
             "status":"error", #(or success)
-            "msg":"Sorry this slot has already been booked",#if success then give success message
-            "cart_id":0
+            "msg":"Sorry and error has occured.Please try again later.",#if success then give success message
+            "cart_total":9000
             }
 
               }

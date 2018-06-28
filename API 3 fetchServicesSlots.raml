@@ -1,0 +1,395 @@
+#%RAML 1.0
+#this api is called when user clicks on Book Studio of Studio Page
+
+title: BookingsFetch API
+
+/fetchServicesSlots:
+  post:
+    body:
+      application/json:
+        example: {
+          "studio_id":9,
+          "user_id":2,
+          }
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+    {
+    	"data": {
+    		"studio_id": 1,
+    		"bookings": [
+    			{
+    				"slot_id": 1,
+    				"studio_id": 1,
+    				"day": "20180702",
+    				"timings": [
+    					{
+    						"hour": "8am",
+    						"amount": 1000,
+    						"booked": true
+    					},
+    					{
+    						"hour": "9am",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "10am",
+    						"amount": 1000,
+    						"booked": true
+    					},
+    					{
+    						"hour": "12pm",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "1pm",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "2pm",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "4pm",
+    						"amount": 1000,
+    						"booked": true
+    					},
+    					{
+    						"hour": "5pm",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "6pm",
+    						"amount": 1000,
+    						"booked": true
+    					},
+    					{
+    						"hour": "8pm",
+    						"amount": 2000,
+    						"booked": true
+    					},
+    					{
+    						"hour": "9pm",
+    						"amount": 2500,
+    						"booked": true
+    					},
+    					{
+    						"hour": "10pm",
+    						"amount": 3000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "11pm",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "12am",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "2am",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "3am",
+    						"amount": 4000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "4am",
+    						"amount": 4000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "6am",
+    						"amount": 4000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "7am",
+    						"amount": 4000,
+    						"booked": false
+    					}
+    				]
+    			},
+    			{
+    				"slot_id": 2,
+    				"studio_id": 1,
+    				"day": "20180630",
+    				"timings": [
+    					{
+    						"hour": "8am",
+    						"amount": 1000,
+    						"booked": true
+    					},
+    					{
+    						"hour": "2pm",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "6pm",
+    						"amount": 1000,
+    						"booked": true
+    					},
+    					{
+    						"hour": "8pm",
+    						"amount": 2000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "9pm",
+    						"amount": 2500,
+    						"booked": true
+    					},
+    					{
+    						"hour": "10pm",
+    						"amount": 3000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "1am",
+    						"amount": 1000,
+    						"booked": true
+    					},
+    					{
+    						"hour": "3am",
+    						"amount": 4000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "4am",
+    						"amount": 4000,
+    						"booked": true
+    					},
+    					{
+    						"hour": "6am",
+    						"amount": 4000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "7am",
+    						"amount": 4000,
+    						"booked": false
+    					}
+    				]
+    			},
+    			{
+    				"slot_id": 3,
+    				"studio_id": 1,
+    				"day": "20180628",
+    				"timings": [
+    					{
+    						"hour": "9am",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "12pm",
+    						"amount": 1000,
+    						"booked": true
+    					},
+    					{
+    						"hour": "2pm",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "4pm",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "6pm",
+    						"amount": 1000,
+    						"booked": true
+    					},
+    					{
+    						"hour": "8pm",
+    						"amount": 2000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "9pm",
+    						"amount": 2500,
+    						"booked": false
+    					},
+    					{
+    						"hour": "10pm",
+    						"amount": 3000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "1am",
+    						"amount": 1000,
+    						"booked": true
+    					},
+    					{
+    						"hour": "3am",
+    						"amount": 4000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "4am",
+    						"amount": 4000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "6am",
+    						"amount": 4000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "7am",
+    						"amount": 4000,
+    						"booked": false
+    					}
+    				]
+    			},
+    			{
+    				"slot_id": 4,
+    				"studio_id": 1,
+    				"day": "20180704",
+    				"timings": [
+    					{
+    						"hour": "9am",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "12pm",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "2pm",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "5pm",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "8pm",
+    						"amount": 2000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "9pm",
+    						"amount": 2500,
+    						"booked": false
+    					},
+    					{
+    						"hour": "10pm",
+    						"amount": 3000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "1am",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "3am",
+    						"amount": 4000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "4am",
+    						"amount": 4000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "6am",
+    						"amount": 4000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "7am",
+    						"amount": 4000,
+    						"booked": false
+    					}
+    				]
+    			},
+    			{
+    				"slot_id": 5,
+    				"studio_id": 1,
+    				"day": "20180706",
+    				"timings": [
+    					{
+    						"hour": "9am",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "12pm",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "2pm",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "5pm",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "8pm",
+    						"amount": 2000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "9pm",
+    						"amount": 2500,
+    						"booked": false
+    					},
+    					{
+    						"hour": "10pm",
+    						"amount": 3000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "1am",
+    						"amount": 1000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "3am",
+    						"amount": 4000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "4am",
+    						"amount": 4000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "6am",
+    						"amount": 4000,
+    						"booked": false
+    					},
+    					{
+    						"hour": "7am",
+    						"amount": 4000,
+    						"booked": false
+    					}
+    				]
+    			}
+    		]
+    	}
+    }

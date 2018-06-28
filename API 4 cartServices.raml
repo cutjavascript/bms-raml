@@ -1,0 +1,40 @@
+#%RAML 1.0
+#this api is for fetchinng services on the 1st page
+
+title: Fetch Services  API
+
+/cartServices:
+  post:
+    body:
+      application/json:
+        example: {
+          "studio_id":9,
+          "user_id":2,
+          }
+    responses:
+      201:
+        body:
+          application/json:
+            example: {
+
+                "data":{#need to check here that if services are submitted which require slots then that many slots are selected
+                  "status":"error", #(or success)
+                  "msg":"Sorry cannot find services",#if success then give success message
+                  "studio_name": "Neelam Studios",
+                  "services": [
+                          {
+                            "studio_service_id": 1,
+                            "slots_required": "1",
+                            "amount": 3000,
+                            "service_name": "Sound Recording"
+                          },
+                          {
+                            "studio_service_id": 2,
+                            "slots_required": "0",
+                            "amount": 2000,
+                            "service_name": "Background Score"
+                          }
+                      ],
+                  }
+
+              }
