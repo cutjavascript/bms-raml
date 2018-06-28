@@ -13,9 +13,11 @@ title: submitServices API
 
           "services":[{#if no services are selected then it will be blank
             "service_id":1,
+            "count":0,#it is 0 as this service requires slots, and CAN'T be increased by itself
           },
           {
             "service_id":2,
+            "count":4,#it is 4 as this service does not require slots, and CAN be increased by itself
           }],
 
           }
@@ -25,7 +27,7 @@ title: submitServices API
           application/json:
             example: {
 
-          "data":{#need to check here that if services are submitted which require slots then that many slots are selected
+          "data":{
             "status":false, #(or success)
             "msg":"Sorry and error has occured.Please try again later.",#if success then give success message
             "cart_total":9000

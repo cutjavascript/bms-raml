@@ -8,9 +8,8 @@ title: BookingsFetch API
     body:
       application/json:
         example: {
-          "studio_id":9,
           "user_id":2,
-          "service_id":2,
+          "cart_service_id":2,
           }
     responses:
       200:
@@ -30,97 +29,116 @@ title: BookingsFetch API
     					{
     						"hour": "8am",
     						"amount": 1000,
-    						"booked": true
+    						"booked": true,
+                "reserved":false,
     					},
     					{
     						"hour": "9am",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":true,
     					},
     					{
     						"hour": "10am",
     						"amount": 1000,
-    						"booked": true
+    						"booked": true,
+                "reserved":false,
     					},
     					{
     						"hour": "12pm",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":true,
     					},
     					{
     						"hour": "1pm",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "2pm",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "4pm",
     						"amount": 1000,
-    						"booked": true
+    						"booked": true,
+                "reserved":false,
     					},
     					{
     						"hour": "5pm",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "6pm",
     						"amount": 1000,
-    						"booked": true
+    						"booked": true,
+                "reserved":false,
     					},
     					{
     						"hour": "8pm",
     						"amount": 2000,
-    						"booked": true
+    						"booked": true,
+                "reserved":false,
     					},
     					{
     						"hour": "9pm",
     						"amount": 2500,
-    						"booked": true
+    						"booked": true,
+                "reserved":false,
     					},
     					{
     						"hour": "10pm",
     						"amount": 3000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "11pm",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "12am",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "2am",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "3am",
     						"amount": 4000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "4am",
     						"amount": 4000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "6am",
     						"amount": 4000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "7am",
     						"amount": 4000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					}
     				]
     			},
@@ -131,57 +149,68 @@ title: BookingsFetch API
     					{
     						"hour": "8am",
     						"amount": 1000,
-    						"booked": true
+    						"booked": true,
+                "reserved":false,
     					},
     					{
     						"hour": "2pm",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "6pm",
     						"amount": 1000,
-    						"booked": true
+    						"booked": true,
+                "reserved":false,
     					},
     					{
     						"hour": "8pm",
     						"amount": 2000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "9pm",
     						"amount": 2500,
-    						"booked": true
+    						"booked": true,
+                "reserved":false,
     					},
     					{
     						"hour": "10pm",
     						"amount": 3000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "1am",
     						"amount": 1000,
-    						"booked": true
+    						"booked": true,
+                "reserved":false,
     					},
     					{
     						"hour": "3am",
     						"amount": 4000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "4am",
     						"amount": 4000,
-    						"booked": true
+    						"booked": true,
+                "reserved":false,
     					},
     					{
     						"hour": "6am",
     						"amount": 4000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "7am",
     						"amount": 4000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					}
     				]
     			},
@@ -192,67 +221,80 @@ title: BookingsFetch API
     					{
     						"hour": "9am",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "12pm",
     						"amount": 1000,
-    						"booked": true
+    						"booked": true,
+                "reserved":false,
     					},
     					{
     						"hour": "2pm",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "4pm",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "6pm",
     						"amount": 1000,
-    						"booked": true
+    						"booked": true,
+                "reserved":false,
     					},
     					{
     						"hour": "8pm",
     						"amount": 2000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "9pm",
     						"amount": 2500,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "10pm",
     						"amount": 3000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "1am",
     						"amount": 1000,
-    						"booked": true
+    						"booked": true,
+                "reserved":false,
     					},
     					{
     						"hour": "3am",
     						"amount": 4000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "4am",
     						"amount": 4000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "6am",
     						"amount": 4000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "7am",
     						"amount": 4000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					}
     				]
     			},
@@ -263,62 +305,74 @@ title: BookingsFetch API
     					{
     						"hour": "9am",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "12pm",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "2pm",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "5pm",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "8pm",
     						"amount": 2000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "9pm",
     						"amount": 2500,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "10pm",
     						"amount": 3000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "1am",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "3am",
     						"amount": 4000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "4am",
     						"amount": 4000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "6am",
     						"amount": 4000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "7am",
     						"amount": 4000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					}
     				]
     			},
@@ -329,62 +383,74 @@ title: BookingsFetch API
     					{
     						"hour": "9am",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "12pm",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "2pm",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "5pm",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "8pm",
     						"amount": 2000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "9pm",
     						"amount": 2500,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "10pm",
     						"amount": 3000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "1am",
     						"amount": 1000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "3am",
     						"amount": 4000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "4am",
     						"amount": 4000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "6am",
     						"amount": 4000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					},
     					{
     						"hour": "7am",
     						"amount": 4000,
-    						"booked": false
+    						"booked": false,
+                "reserved":false,
     					}
     				]
     			}

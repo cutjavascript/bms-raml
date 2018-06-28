@@ -17,20 +17,20 @@ title: Fetch Services  API
           application/json:
             example: {
 
-                "data":{#need to check here that if services are submitted which require slots then that many slots are selected
+                "data":{
                   "status":false, #(or success)
                   "msg":"Sorry cannot find services",#if success then give success message
                   "studio_name": "Neelam Studios",
                   "services": [
                           {
-                            "studio_service_id": 1,
-                            "slots_required": "1",
+                            "cart_service_id": 1,
+                            "bookings_required": "1",
                             "amount": 3000,
                             "service_name": "Sound Recording"
                           },
                           {
-                            "studio_service_id": 2,
-                            "slots_required": "0",
+                            "cart_service_id": 2,
+                            "bookings_required": "0",
                             "amount": 2000,
                             "service_name": "Background Score"
                           }
