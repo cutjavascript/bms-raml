@@ -1,0 +1,62 @@
+#%RAML 1.0
+#api to remove slots from cart
+
+title: get Carts
+
+/getCart:
+  post:
+    body:
+      application/json:
+        example: {
+          "studio_id":9,
+          "user_id":2,
+          }
+    responses:
+      201:
+        body:
+          application/json:
+            example: {
+	"data": {
+		"status": true,
+		"msg": "cart details found",
+		"cart_id": 1530112911254,
+		"cart_details": {
+			"cart_total": 9000,
+			"services": [
+				{
+					"service_id": 1,
+					"amount": 3000,
+					"service_name": "Sound Recording",
+					"bookings": [
+						{
+							"day": "20180702",
+							"timings": [
+								{
+									"hour": "8am",
+									"amount": 1200
+								},
+								{
+									"hour": "9am",
+									"amount": 2000
+								}
+							]
+						},
+						{
+							"day": "20180703",
+							"timings": [
+								{
+									"hour": "8am",
+									"amount": 3000
+								},
+								{
+									"hour": "9am",
+									"amount": 4000
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	}
+}

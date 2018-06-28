@@ -1,5 +1,5 @@
 #%RAML 1.0
-#this api is called when user clicks on Book Studio of Studio Page
+#this api is called for listing of slots available for each service selected by user
 
 title: BookingsFetch API
 
@@ -10,6 +10,7 @@ title: BookingsFetch API
         example: {
           "studio_id":9,
           "user_id":2,
+          "service_id":2,
           }
     responses:
       200:
@@ -18,11 +19,12 @@ title: BookingsFetch API
             example:
     {
     	"data": {
+        "status":true,
     		"studio_id": 1,
+        "service_id":2,
     		"bookings": [
     			{
     				"slot_id": 1,
-    				"studio_id": 1,
     				"day": "20180702",
     				"timings": [
     					{
@@ -124,7 +126,6 @@ title: BookingsFetch API
     			},
     			{
     				"slot_id": 2,
-    				"studio_id": 1,
     				"day": "20180630",
     				"timings": [
     					{
@@ -186,7 +187,6 @@ title: BookingsFetch API
     			},
     			{
     				"slot_id": 3,
-    				"studio_id": 1,
     				"day": "20180628",
     				"timings": [
     					{
@@ -258,7 +258,6 @@ title: BookingsFetch API
     			},
     			{
     				"slot_id": 4,
-    				"studio_id": 1,
     				"day": "20180704",
     				"timings": [
     					{
@@ -325,7 +324,6 @@ title: BookingsFetch API
     			},
     			{
     				"slot_id": 5,
-    				"studio_id": 1,
     				"day": "20180706",
     				"timings": [
     					{

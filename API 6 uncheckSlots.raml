@@ -1,9 +1,9 @@
 #%RAML 1.0
-#api for adding bookings to carts
+#api to remove slots from cart
 
-title: adding bookings
+title: Uncheck selected slot and remove from cart
 
-/addSlots:
+/uncheckSlots:
   post:
     body:
       application/json:
@@ -27,7 +27,7 @@ title: adding bookings
             example: {
                 "data": {
                   "status": true,
-                  "msg": "data successfuly inserted",
+                  "msg": "slot successfuly removed",
                   "cart_id": 1530112911254
                 }
             }
