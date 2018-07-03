@@ -3,22 +3,22 @@
 
 title: adding bookings
 
-/addSlots:
+/bookings/addSlots:
   post:
     body:
       application/json:
         example: {
-            "user_id": 2,
-            "cart_service_id": 2,
-            "bookings": [
-              {
-              "slot_id": 2,
-              "booking_time": "2pm",
-              "availed": true
-              }
-            ],
-            "bookingDay": "201806302pm"
-          }
+          "user_id": 2,
+          "cart_service_id": 37,
+          "bookings": [
+            {
+            "slot_id": 1,
+            "booking_time": "5pm",
+            "availed": true
+            }
+          ],
+          "bookingDay": "201807044pm"
+        }
     responses:
       201:
         body:
