@@ -3,12 +3,12 @@
 
 title: Fetch Services  API
 
-/cartServices:
+/bookings/cartServices:
   post:
     body:
       application/json:
         example: {
-          "studio_id":9,
+          "studio_id":1,
           "user_id":2,
           }
     responses:
@@ -22,19 +22,23 @@ title: Fetch Services  API
                   "msg":"Sorry cannot find services",#if success then give success message
                   "studio_name": "Neelam Studios",
                   "services": [
-                          {
-                            "cart_service_id": 1,
-                            "bookings_required": "1",
-                            "amount": 3000,
-                            "service_name": "Sound Recording"
-                          },
-                          {
-                            "cart_service_id": 2,
-                            "bookings_required": "0",
-                            "amount": 2000,
-                            "service_name": "Background Score"
-                          }
-                      ],
-                  }
-
+                      {
+                          "cart_id": 1530540598108,
+                          "total": 8000,
+                          "bookings_required": 1,
+                          "service_count": 0,
+                          "name": "Neelam Studios",
+                          "service_name": "Sound Recording",
+                          "amount": "3000"
+                      },
+                      {
+                          "cart_id": 1530540598108,
+                          "total": 8000,
+                          "bookings_required": 0,
+                          "service_count": 4,
+                          "name": "Neelam Studios",
+                          "service_name": "Background Score",
+                          "amount": "2000"
+                      }
+                  ]
               }
