@@ -12,10 +12,12 @@ title: submitServices API
           "user_id":2,
 
           "services":[{#if no services are selected then it will be blank
+            "id": 10, #for first time send 0
             "service_id":1,
             "count":0,#it is 0 as this service requires slots, and CAN'T be increased by itself
           },
           {
+            "id": 11, #for first time send 0
             "service_id":2,
             "count":4,#it is 4 as this service does not require slots, and CAN be increased by itself
           }],
@@ -30,7 +32,17 @@ title: submitServices API
           "data":{
             "status":false, #(or success)
             "msg":"Sorry and error has occured.Please try again later.",#if success then give success message
-            "cart_total":9000
+            "cart_total":9000,
+            "service": [{
+                    "id": 10, #update this id with view json. send it back when you update count..
+                    "service_id": 1,
+                    "count": 0
+                },
+                {
+                    "id": 11,
+                    "service_id": 2,
+                    "count": 6
+                }]
             }
 
               }
