@@ -3,8 +3,8 @@
 
 title: get Carts
 
-/getCart:
-  get:
+/bookings/getCart:
+  POST:
     body:
       application/json:
         example: {
@@ -15,47 +15,51 @@ title: get Carts
         body:
           application/json:
             example: {
-	"data": {
-		"status": true,
-		"msg": "cart details found",
-		"cart_id": 1530112911254,
-		"cart_details": {
-			"cart_total": 9000,
-			"services": [
-				{
-					"service_id": 1,
-					"amount": 3000,
-					"service_name": "Sound Recording",
-					"bookings": [
-						{
-							"day": "20180702",
-							"timings": [
-								{
-									"hour": "8am",
-									"amount": 1200
-								},
-								{
-									"hour": "9am",
-									"amount": 2000
-								}
-							]
-						},
-						{
-							"day": "20180703",
-							"timings": [
-								{
-									"hour": "8am",
-									"amount": 3000
-								},
-								{
-									"hour": "9am",
-									"amount": 4000
-								}
-							]
-						}
-					]
-				}
-			]
-		}
-	}
+    "data": {
+        "cart_id": 1530690003016,
+        "cart_total": 17500,
+        "status": true,
+        "msg": "cart details found",
+        "services": [
+            {
+                "id": 52,
+                "service_id": 1,
+                "amount": 9500,
+                "count": 0,
+                "required_slots": 1,
+                "service_name": "Sound Recording",
+                "bookings": {
+                    "day": "20180704",
+                    "timings": [
+                        {
+                            "service_cart_id": 52,
+                            "amount": 5000,
+                            "day": "20180704",
+                            "booking_time": "5pm"
+                        },
+                        {
+                            "service_cart_id": 52,
+                            "amount": 2500,
+                            "day": "20180704",
+                            "booking_time": "8pm"
+                        },
+                        {
+                            "service_cart_id": 52,
+                            "amount": 2000,
+                            "day": "20180704",
+                            "booking_time": "7pm"
+                        }
+                    ]
+                }
+            },
+            {
+                "id": 53,
+                "service_id": 2,
+                "amount": 2000,
+                "count": 4,
+                "required_slots": 0,
+                "service_name": "Background Score"
+            }
+        ]
+    }
 }
